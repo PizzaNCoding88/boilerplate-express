@@ -4,7 +4,8 @@ const { userPassedConsoleChallenge } = require('fcc-express-bground/globals');
 let app = express();
 
 app.get("/", (req,res) =>{
-    res.send("Hello Express");
+    path = __dirname + '/views/index.html'
+    res.sendFile(path);
 })
 
 
