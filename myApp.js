@@ -10,9 +10,10 @@ app.get("/", (req,res) =>{
 
 
 
-// let path = '/public';
+let path = __dirname + '/public';
 
-app.use("/public", express.static(__dirname + '/public'));
+// app.use("/public", express.static(__dirname + "/public");
+app.use('/public', express.static(path));
 
 
 
