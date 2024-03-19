@@ -1,3 +1,4 @@
+require('dotenv').config()
 let express = require('express');
 const res = require('express/lib/response');
 const { userPassedConsoleChallenge } = require('fcc-express-bground/globals');
