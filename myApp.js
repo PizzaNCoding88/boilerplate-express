@@ -37,7 +37,7 @@ app.get("/json", (req,res) => {
 //     next()
 // })
 
-app.use((req,res,next)=>{
+app.use('/',(req,res,next)=>{
     // let method = req.method;
     // let path = req.path;
     // let ip = req.ip;
