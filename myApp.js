@@ -29,7 +29,23 @@ app.get("/json", (req,res) => {
 
 
 
+// app.get("/json", (req,res,next)=>{
+//     let method = req.method;
+//     let path = req.path;
+//     let ip = req.ip;
+//     console.log(method, path, ip);
+//     next()
+// })
 
+app.use((req,res,next)=>{
+    // let method = req.method;
+    // let path = req.path;
+    // let ip = req.ip;
+    let string = req.method + "" + req.path + "" + req.ip;
+    console.log(string);
+    console.log("yes");
+    next();
+})
 
 
 
